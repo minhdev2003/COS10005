@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/order.css">
+    <script src="js/order.js"></script>
+    <title>BrunoPizzeria - Welcome</title>
+</head>
+<body>
+    <main>
+<!----------------------------------Header Section----------------------------->
+        <header>
+            <a href="file:///C:/Users/iwill/Documents/Code/assignment2/index.html"><img class = "logo" src="images/logo.png" alt="logo"></a>
+            <nav> 
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>  
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#menu">Menu</a></li>
+                    <li><a href="index.html#location">Location</a></li>
+                    <li>
+                        <a>
+                            More
+                            <i class="nav-arrow-down fas fa-caret-down"></i>
+                        </a>
+                        <ul class="subnav">
+                            <li><a href="registration.html">Register</a></li>
+                            <li><a href="order.html">Order</a></li>
+                            <li><a href="features.html">Features</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav> 
+        </header>
+<!----------------------------------Order Form Section----------------------------->
+        <div class="body">
+            <img src="images/bg.jpg" alt="bg">
+            <form id="regform" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+                <h4>Order Details</h4>
+                <div class="radioinput">
+                    <label>How would you like to take your order?</label>
+                    <input type="radio" onclick="yesnoCheck();" name="take_order" id="deli" value="delivery">
+                    <label>Delivery</label>
+                    <input type="radio" onclick="yesnoCheck();" name="take_order" id="pickup" value="pickup">
+                    <label>Pick-up</label>
+                </div>
+                <div id="ifYes" style="visibility:hidden">
+                    <div class="textinput">
+                        <label>Delivery address</label>
+                        <input id="deliadd" type="text" name="delivery_address" />
+                    </div>
+                    <div class="radioinput">
+                        <label>Billing address same as delivery address</label>
+                        <input id="same" type="checkbox" name="same_as_delivery_address" value="yes" onclick="copy(event)" />
+                    </div>
+                    <div class="textinput">
+                        <label>Billing address</label>
+                        <input id="billadd" type="text" name="billing_adress" />
+                    </div>
+                </div>
+                <div class="textinput">
+                    <label>Contact number</label>
+                    <input id="contact" type="number" name="contact"/>
+                </div>
+                <div class="textinput">
+                    <label>Email (for receipt)</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="radioinput">
+                    <label>Payment method</label>
+                    <input type="radio" onclick="yesCheck();" name="pay" id="paypickup" value="on_pick-up">On pick-up
+                    <input type="radio" onclick="yesCheck();" name="pay" id="payonline" value="online"> Online
+                </div>
+                <div id="ifyeah" style="visibility:hidden">
+                    <h4>Credit card information</h4>
+                    <div class="radioinput">
+                        <label>Choose one of the following types</label>
+                        <input type ="radio" id="visa" name="card_type" value="Visa" />
+                        <label>Visa</label>
+                        <input type ="radio" id="master" name="card_type" value="Mastercard" />
+                        <label>Mastercard</label>
+                        <input type ="radio" id="american" name="card_type" value="American_Express" />
+                        <label>American Express</label>
+                    </div>
+                    <div class="textinput">
+                        <label class="textinput input">Enter credit card number</label>
+                        <input id="creditnumber" type="number" name="credit_number"/>
+                    </div>
+                </div>
+                <input class="button" type="submit" value="Submit" />
+                <input class="button" type="reset" value="Reset" />
+            </form>
+        </div>
+<!----------------------------------Footer Section----------------------------->
+        <footer>
+            <p><span class="Bruno">Bruno Pizzeria</span>  |  A MinhDev2003 Production</p>
+            <div class="social-info1">
+                <div class="media-icons1">
+                    <i class="fab fa-twitter"></i>
+                    <i class=" fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

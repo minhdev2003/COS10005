@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+html {
+    color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*------------------------Header Styling--------------------*/
+
+nav {
+    float: right;
+    width: 46%;
+    margin: 0 auto;
+}
+
+header {
+    height: 89px;
+    background-color: #121618;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.nav, .subnav {
+    list-style-type: none;
+}
+
+.nav > li {
+    display: inline-block;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav > li > a {
+    color: #FFF;
+}
+
+.nav li a {
+    color: #FFF;
+    text-decoration: none;
+    line-height: 89px;
+    padding: 0 24px;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav li:hover .subnav {
+    display: block;
+}
+
+.nav .subnav li:hover a,
+.nav > li:hover > a {
+    color: #FAC564;
+}
+
+
+
+.nav .subnav {
+    background-color: black;
+    position: absolute;
+    display: none;
+}
+
+.nav .subnav a {
+    color: #FFF;
+    padding: 0 20px;
+    line-height: 50px;
+}
+
+.logo { 
+    margin-left: 97px; 
+    height: 60px; 
+    width: 150px; 
+    margin-top: 15px; 
+}
+
+/*------------------------Order Form Styling--------------------*/
+#regform h4 {
+    font-family:  "Josefin Sans", Arial, sans-serif;;
+    font-size:2em;
+    font-weight:300;
+    margin:  13px 12px 12px;
+    text-align: center;
+    color:#fff;
+    text-shadow:1px 1px 0px white;
+}
+
+#regform input {
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #FAC564;
+}
+
+.body {
+    margin-top: 89px;
+    position: relative;
+    height: 988px;
+    
+}
+
+.body img {
+    width: 100%;
+    height: 988px;
+}
+
+form {
+    position: absolute;
+    height: 745px;
+    width: 70em;
+    background-color:#121618;
+    border-radius: 10px;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+input::placeholder {
+    font-size:16px;
+    color:black;
+    font-family: "Poppins", Arial, sans-serif;
+    
+}
+
+label {
+    float: left;
+    text-align: right;
+    width: 10em;
+    margin-right: 1em;
+    font: 22px "Poppins", Arial, sans-serif ;
+    line-height: 46.4px;
+}
+
+input {
+    width: 50%;
+}
+
+.textinput {
+    margin: 10px;
+}
+
+
+
+.radioinput legend {
+    float: left;
+    text-align: right;
+    width: 9em;		
+    margin-right: 1em;
+}
+
+input#creditnumber {
+    margin-left: 243px;
+}
+
+.radioinput input  {
+    width: 2em;		
+}
+
+.radioinput label  {
+    float: none;		
+    text-align: left;
+    margin-left: 40px;		
+}
+
+/*------------------------Button Styling --------------------*/
+input.button {
+    height: 46.4px;
+    border-radius: 6px;
+    padding: 14px;
+    font-weight: bold;
+    float: right;
+}
+
+
+
+#regform .button {
+    width: 145px;
+    margin-top: 10px;
+    background: rgb(239, 159, 12);
+    color: #fff;
+    font-weight: bold;    
+    font-weight: 400;
+}
+
+#regform .button {
+    cursor: pointer;
+    font-weight: bold;    
+    
+}
+
+#regform .button:hover {
+    background-color:orange;;
+    color: black;
+    border-bottom-right-radius: 32%;
+    border-bottom-left-radius: 32%;
+} 
+
+/*------------------------Input Styling --------------------*/
+#regform input[type="text"], #regform input[type="number"], #regform input[type="email"] {
+    font-family:  "Poppins", Arial, sans-serif;
+    background-color: #FAC564;
+    display:block;
+    width:800px;
+    padding:14px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+    border:0;
+    margin-bottom: 20px;
+    color:#7f8c8d;
+    font-weight:600;
+    font-size:16px;
+}
+
+.input {
+    float:none;
+}
+
+/*------------------------Footer Styling --------------------*/
+footer {
+    height: 100px;
+    background-color: #121618;
+    position: relative;
+    justify-content: space-between;
+    
+}
+
+footer .Bruno {
+    font-size: 30px;
+    font-weight:400;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    line-height: 100px;
+    margin-left: 50px;
+    color: #FAC564;
+}
+
+footer p {
+    font-size: 20px;
+    font-weight:400;
+    text-transform: capitalize;
+    font-family:  "Josefin Sans", Arial, sans-serif ;
+    line-height: 100px;
+    color: #edf0f1;
+    position: absolute;
+    bottom: 0;
+    line-height: 100px;
+}
+
+/*------------------------Footer Social Media Icons Styling --------------------*/
+.social-info1 {
+    height: 100px;
+    float: right;
+    margin: 0 auto;
+    margin-right: 75px;
+}
+
+.media-icons1 i {
+    margin-left: 20px;
+    display: inline-block;
+    padding: 0px 5px;
+    font-size: 30px;
+    color: #FFF;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+.media-icons1 i {
+    transition: all 0.3s ease 0s;
+}
+
+/*--------------media Query------------*/
+@media(max-width:1220px) {
+    html {
+        font-size: 17px;
+    }
+    
+    nav {
+        width: 60%;
+    }
+ 
+    
+    #regform .button {
+        margin-top: -35px;
+        padding: 0;
+    }
+}

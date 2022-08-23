@@ -1,0 +1,755 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 84.5px;
+  overflow-x: hidden;
+}
+
+
+/*----------------------------------Header Section Styling-----------------------------*/
+nav {
+  float: right;
+  width: 46%;
+  margin: 0 auto;
+}
+
+header {
+  height: 89px;
+  background-color: #121618;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.nav, .subnav {
+  list-style-type: none;
+}
+
+.nav > li {
+  display: inline-block;
+}
+
+.nav li {
+  position: relative;
+}
+
+.nav > li > a {
+  color: #FFF;
+}
+
+.nav li a {
+  color: #FFF;
+  text-decoration: none;
+  line-height: 89px;
+  padding: 0 24px;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav li:hover .subnav {
+  display: block;
+}
+
+.nav .subnav li:hover a,
+.nav > li:hover > a {
+  color: #FAC564;
+}
+
+
+
+.nav .subnav {
+  background-color: black;
+  position: absolute;
+  display: none;
+}
+
+.nav .subnav a {
+  color: #FFF;
+  padding: 0 20px;
+  line-height: 50px;
+}
+
+.logo { 
+  margin-left: 97px; 
+  height: 60px; 
+  width: 150px; 
+  margin-top: 15px; 
+}
+
+
+/*----------------------------------Home Section Styling-----------------------------*/
+.home, .features {
+  margin-top: 89px;
+  position: relative;
+  height: 750px;
+}
+
+.home img, .features img {
+  width: 100%;
+  height: 750px;
+}
+
+.text-intro {
+  position: absolute;
+  text-align: center ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.subheading {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 30px;
+  color: #fac564;
+}
+
+.intro {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-family: "Josefin Sans", Arial, sans-serif;
+}
+
+
+
+
+section.home {
+  height: 750px;
+} 
+
+.info {
+  background-color: #000;
+  height: 143px;
+  position: relative;
+  
+}
+
+
+.info .text {
+  float: left;
+  color: #FFF;
+  width: 20%;
+  transform: translateX(40px) translateY(40px);
+}
+
+h3 {
+  line-height: 1.4;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Josefin Sans", Arial, sans-serif;
+}
+
+.info .text #t1 {
+  margin-left: 21px;
+  margin-top: 8px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 300;
+  color: gray;
+}
+
+.info .text #t2 {
+  margin-left: 14.5px;
+  margin-top: 8px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 300;
+  color: gray;
+}
+
+.info .text #t3 {
+  margin-left: 25px;
+  margin-top: 8px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 300;
+  color: gray;
+}
+
+/*----------------------------------Social Media icons Styling-----------------------------*/
+.social-info {
+  background-color: #FAC564;
+  height: 143px;
+  width: 39%;
+  float: right;
+}
+
+.media-icons i {
+  margin-left: 30px;
+  display: inline-block;
+  padding: 0px 5px;
+  font-size: 30px;
+  color: #FFF;
+  line-height: 143px;
+  cursor: pointer;
+}
+.media-icons i {
+  transition: all 0.3s ease 0s;
+}
+
+
+/*----------------------------------About Section Styling-----------------------------*/
+.about .column {
+  float: left;
+  width: 50%;
+  padding: 0;
+  position: relative;
+  height: 418px;
+}
+
+.about img {
+  height: 418px; 
+  width: 100%;
+}
+
+.about::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.text-descript {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-descript h2 {
+  font-size: 30px;
+  font-weight:400;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", Arial, sans-serif;
+  line-height: 1.4;
+  color: #fff;
+}
+
+
+
+.about-content {
+  color: #CCCCCC;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 300;
+  width: 90%;
+  margin-left: 35px;
+  line-height: 1.8;
+  margin-top: 16px;
+}
+
+
+/*----------------------------------Services Section Styling-----------------------------*/
+#services {
+  position: relative;
+  height: 724px;
+}
+
+#bg1 {
+  width: 100%;
+}
+
+.services-info {
+  position: absolute;
+  bottom: 0;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.services-info h2, .menu-info h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", Arial, sans-serif;
+  color: #FFF;
+}
+
+
+#services-title {
+  color: #ada69c;
+  margin-top: 16px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.service-content {
+  padding: 0px 0;
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 1.2fr;
+  grid-gap: 1rem;
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  bottom: 1%;
+}
+
+.service-content .inner-box {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+
+.service-content .inner-box img {
+  width: 190px;
+  height: 190px;
+}
+
+.service-content .inner-box p {
+  font-size: 1.3rem;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #ada69c;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.service-content .inner-box h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #edf0f1;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+/*----------------------------------Menu Section Styling-----------------------------*/
+#menu {
+  position: relative;
+  height: 888px;
+}
+
+
+
+
+.menu-info {
+  position: absolute;
+  bottom: 0;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#bg {
+  width: 100%;
+}
+
+#menu-title {
+  color: #808080;
+  margin-top: 16px;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.menu-content {
+  padding: 0px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  bottom: 1%;
+}
+
+.menu-content .inner-box {
+  padding: 1rem 0px;
+  text-align: center;
+}
+
+
+.menu-content .inner-box img {
+  width: 190px;
+  height: 190px;
+}
+
+.inner-box p {
+  font-size: 1.3rem;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #808080;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.menu-content .inner-box h2 {
+  margin-bottom: 20px;
+  color: #edf0f1;
+  text-transform: capitalize;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: "Josefin Sans", Arial, sans-serif;
+  font-size: 22px;
+}
+
+.price {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.clr {
+  color: #FAC564;
+}
+
+.btn  {
+  color: #fff;
+  font-size: 13px;
+  padding: 6px 12px;
+  display: inline-block;
+  transition: all .4s ease-in-out;
+  background: transparent;
+  border: 1px solid #fff;
+  text-decoration: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.btn p {
+  color: #fff;
+  font-size: 13px;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.btn:hover {
+  background: #fac564;
+  border-color: #FAC564;
+  color: black;
+}
+
+
+/*----------------------------------Location Section Styling-----------------------------*/
+#location {
+  height: 130px;
+  position: relative;
+  background-color: #121618;
+}
+
+
+
+.loc-descript {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loc-descript h2 {
+  font-size: 30px;
+  font-weight:400;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", Arial, sans-serif;
+  line-height: 1.4;
+  color: #fff;
+  text-align: center;
+}
+
+.loc-content {
+  color: #ada69c;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  width: 100%;
+  line-height: 1.8;
+  margin-top: 14px;
+}
+
+#map {
+  height: 600px;
+}
+
+.map {
+  filter: brightness(43%);
+  width: 100%;
+  height: 600px;
+}
+
+
+/*------------------------Footer Section--------------------*/
+footer {
+  height: 100px;
+  background-color: #121618;
+  position: relative;
+  justify-content: space-between;
+  
+}
+
+.Bruno {
+  color: #FAC564;
+}
+
+
+footer .Bruno {
+  font-size: 30px;
+  font-weight:400;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", Arial, sans-serif;
+  line-height: 100px;
+  margin-left: 50px;
+}
+
+footer p {
+  font-size: 20px;
+  font-weight:400;
+  text-transform: capitalize;
+  font-family:  "Josefin Sans", Arial, sans-serif ;
+  line-height: 100px;
+  color: #edf0f1;
+  position: absolute;
+  bottom: 0;
+  line-height: 100px;
+  
+}
+
+/*------------------------Footer Social Media Icons Styling --------------------*/
+.social-info1 {
+  height: 100px;
+  float: right;
+  margin: 0 auto;
+  margin-right: 75px;
+}
+
+.media-icons1 i {
+  margin-left: 20px;
+  display: inline-block;
+  padding: 0px 5px;
+  font-size: 30px;
+  color: #FFF;
+  line-height: 100px;
+  cursor: pointer;
+}
+.media-icons1 i {
+  transition: all 0.3s ease 0s;
+}
+
+/*register form styling*/
+.not-valid{
+  background-color: #de606030;
+}
+
+form div {
+  text-align: left;
+  margin: 5px 3px;
+  font-size: 22px;	
+}
+
+.body {
+  margin-top: 89px;
+  position: relative;
+  height: 988px;
+  
+}
+
+.body img {
+  width: 100%;
+  height: 988px;
+}
+
+
+
+input[type="radio"] {
+  margin: 4px 0px 20px -105px;
+}
+
+
+.gend {
+  display: flex;
+  margin-left: 64px;
+  color: #FFF;
+}
+
+.dgend {
+  text-align: center;
+  margin: -5px 56px 5px 4px;
+  color: #FFF;
+}
+
+input::placeholder {
+  font-size:16px;
+  color:black;
+  font-family: "Poppins", Arial, sans-serif;
+  
+}
+
+#regform label {
+  color: #FFF;
+  font-family:  "Poppins", Arial, sans-serif;
+}
+form {
+  width:365px;
+  position: absolute;
+  bottom: 0;
+  height:100%;
+  text-align:center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 554px;
+  background:rgb(26, 32, 35);
+  padding:40px;
+  border-radius: 10px;
+  
+}
+
+#regform h4 {
+  font-family:  "Josefin Sans", Arial, sans-serif;;
+  font-size:2em;
+  font-weight:300;
+  margin: -24px 13px 12px 12px;
+  color:#fff;
+  text-shadow:1px 1px 0px white;
+}
+
+#regform input {
+  font-family:  "Poppins", Arial, sans-serif;
+  background-color: #FAC564;
+  display:block;
+  width:315px;
+  padding:14px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
+  border:0;
+  margin-bottom: 20px;
+  color:#7f8c8d;
+  font-weight:600;
+  font-size:16px;
+}
+
+
+
+input:focus {
+  background:transparent;
+}
+
+
+#regform .button {
+  position: relative;
+  margin-left: 115px;
+  float: left;
+  width: 145px;
+  margin-top: 10px;
+  background: rgb(239, 159, 12);
+  color: #fff;
+  font-weight: 400;
+}
+
+#regform .button:hover {
+  background-color:orange;;
+  color: black;
+  border-bottom-right-radius: 32%;
+  border-bottom-left-radius: 32%;
+} 
+
+#regform input {
+  display: block;
+  width: 315px;
+  padding: 14px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 0;
+  margin-bottom: 20px;
+  color: #171f20;
+  font-weight: 600;
+  font-size: 16px;
+}  
+
+#regform option {
+  display: block;
+  width: 315px;
+  padding: 14px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  border: 0;
+  margin-bottom: 20px;
+  color: #171f20;
+  font-weight: 600;
+  font-size: 16px;
+}  
+
+
+
+#regform input [type="checkbox"] {
+  width:10px;
+}
+
+#regform .button {
+  cursor: pointer;
+  font-weight: bold;    
+  top: -15px;
+}
+
+/*------------------------Aside image Styling--------------------*/
+aside {
+  float: right;
+  position: absolute;
+  bottom: 0;
+  top: 100px;
+  left: 840px;
+}
+
+aside img {
+  height: 500px;
+  width: 800px;
+}
+
+/*------------------------Feature Webpage--------------------*/
+.features-content {
+  position: absolute;
+  text-align: center ;
+  text-align: justify;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: white;
+}
+
+.features-title {
+  transform:translateY(-251.6px) ;
+}
+
+ol li {
+  margin: 15px;
+}
+
+ol li a {
+  text-decoration: none;
+}
+
+ol li a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+
+
+

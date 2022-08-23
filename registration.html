@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="js/script.js"></script> 
+  <title>BrunoPizzeria - Welcome</title>
+</head>
+<body>
+  <main>
+<!----------------------------------Header Section----------------------------->
+    <header>
+      <a href="index.html"><img class = "logo" src="images/logo.png" alt="logo"></a>
+      <nav> 
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>  
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#menu">Menu</a></li>
+          <li><a href="index.html#location">Location</a></li>
+          <li>
+            <a>
+              More
+              <i class="nav-arrow-down fas fa-caret-down"></i>
+            </a>
+            <ul class="subnav">
+              <li><a href="registration.html">Register</a></li>
+              <li><a href="order.html">Order</a></li>
+              <li><a href="features.html">Features</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav> 
+    </header>
+<!----------------------------------Register Form Section----------------------------->
+    <div class="body">
+      <img src="images/bg.jpg" alt="bg">
+      <form id="regform" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" method="post" name="main_form">
+        <h4>Registration info</h4>
+        <div><label for="uname">Name</label></div>
+        <input name="name" id="uname" type="text" placeholder="Enter name" >
+        <div><label for="uname">Postcode</label></div>
+        <input id="postcode" type="number" placeholder="Enter Postcode" name="postcode"/>
+        <div><label for="useremail">Email Address</label></div>				
+        <input name="email" id="useremail" type="email" placeholder="Enter email" > 
+        <div><label for="pwd1">Password</label></div>
+        <input name="password" id="pwd1" type="password" placeholder="Enter password" >
+        <div><label for="pwd2">Confirm password</label></div>
+        <input name="confirmPassword" id="pwd2" type="password" placeholder="Confirm password" > 
+        
+        <div class="dgend">Gender</div>
+        <span class="gend">
+          M<input type="radio" name="gender" value="M" id="genm" >
+          F<input type="radio" name="gender" value="F" id="genf" >			
+        </span>
+        <input class="button" type="submit" value="Register" name="submit">		
+      </form>	
+    </div>
+    <footer>
+      <p><span class="Bruno">Bruno Pizzeria</span>  |  A MinhDev2003 Production</p>
+      <div class="social-info1">
+        <div class="media-icons1">
+          <i class="fab fa-twitter"></i>
+          <i class=" fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+<!----------------------------------Footer Section----------------------------->
+    </footer>
+    <aside>
+      <img  class="animate__animated animate__jackInTheBox" src="images/signature.png" alt="signature">
+    </aside>
+  </main> 
+</body>
+</html>
